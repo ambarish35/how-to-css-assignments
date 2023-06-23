@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .card{
+            box-sizing: border-box;
+            margin: 100px auto;
+            padding: 15px;
+            width: 500px;
+            border: 1px solid lightgray;
+            border-radius: 20px;
+            box-shadow: 0px 0px 8px 6px rgba(175, 174, 174, 0.404);
+        }
+
+        .card-img{
+            max-width: 100%;
+            border-radius: 15px;
+        }
+        
+        .card-header{
+            position: relative;
+        }
+        .tag1{
+            position: absolute;
+            top: 12px;
+            left: 15px;
+            background-color: #14050550;
+            border-radius: 5px;
+            padding: 2px;
+            font-size: 0.8rem;
+            color: #D5E0E2;
+            backdrop-filter: blur(5px);
+        }
+
+        .tag2{
+            position: absolute;
+            background-color: #266FEF ;
+            bottom: 20px;
+            border-radius: 0px 4px 4px 0px;
+            padding: 2px 4px;
+            color:#ffffff;
+        }
+
+        .tag3{
+            position:absolute;
+            bottom: 15px;
+            right: 10px;
+            background-color: #F7F9F9;
+            border-radius: 5px;
+            color: black;
+            padding: 5px;
+            font-weight: 500;
+            font-size: 0.8rem;
+        }
+
+        .text{
+            margin: 20px 0px;
+        }
+
+        .text h2{
+            margin-bottom: 10px;
+        }
+
+        .text p{
+            font-size: 1.2rem;
+            color: rgb(110, 110, 110);
+            font-weight: 400;
+        }
+
+        .footer{
+            display: flex;
+            width: 100%;
+            border-top: 1px solid lightgray;
+            padding: 10px 0px;
+        }
+
+        .footer-img{
+            display: inline-block;
+            max-width: 20%;
+            height: 40px;
+        }
+
+        .footer p{
+            margin: 0px 15px ;
+            width: 80%;
+            color: grey;
+            font-weight: 500;
+        }
+        
+        #home{
+            height: 70px;
+            width: 70px;
+            position: fixed;
+            top : 30px;
+            left: 20px;
+            padding: 10px;
+            border-radius: 50%;
+            border: 1px solid #61ffca;
+            background-color: #64CCC5;
+            font-family: 'Indie Flower', cursive;
+            font-size: 1.2rem;
+            color: #DAFFFB;
+            box-shadow: 0px 0px 8px 4px rgba(175, 174, 174, 0.404);
+            
+        }
+
+        #next{
+            height: 70px;
+            width: 150px;
+            position: fixed;
+            bottom : 30px;
+            right: 50px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #61ffca;
+            background-color: #479792;
+            font-family: 'Indie Flower', cursive;
+            font-size: 1.1rem;
+            color: #DAFFFB;
+            box-shadow: 0px 0px 8px 6px rgba(175, 174, 174, 0.404);
+            
+        }
+
+        #pre{
+            height: 70px;
+            width: 150px;
+            position: fixed;
+            bottom : 30px;
+            left: 50px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #61ffca;
+            background-color: #479792;
+            font-family: 'Indie Flower', cursive;
+            font-size: 1.1rem;
+            color: #DAFFFB;
+            box-shadow: 0px 0px 8px 6px rgba(175, 174, 174, 0.404);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <img src="https://source.unsplash.com/1600x900/?food" alt="Food Items" class="card-img">
+            <p class="tag1">Promoted</p>
+            <p class="tag2">50% OFF up to 100</p>
+            <p class="tag3">38 min</p>
+        </div>
+        <div class="text">
+            <h2>Center Point Resturant</h2>
+            <p>North Indian, Chinese</p>
+        </div>
+        
+        <div class="footer">
+            
+                <img src="https://b.zmtcdn.com/data/o2_assets/e50eb01feab6bd50e50430f34b4645ac1613542991.png" alt="Max-safety Delivery" class="footer-img">
+            
+            <p>Follows all Max Safety measures to ensure your food is safe</p>
+        </div>
+    </div>
+    
+    <button onclick="location.href='./index.html';" id="home" > Home</button>
+
+    <button onclick="location.href='./assignment2.html';" id="next" >Next</button>
+
+    <button onclick="location.href='./index.html';" id="pre" >Previous</button>
+</body>
+</html>

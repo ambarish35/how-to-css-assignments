@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <script src="https://kit.fontawesome.com/c595f1afc1.js" crossorigin="anonymous"></script>
+    <style>
+
+        
+    @import url('https://fonts.cdnfonts.com/css/metropolis');
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .card{
+            margin: 100px auto;
+            background-image: url(https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png);
+
+            width: 550px;
+            height: 150px;
+            text-align: center;
+            padding: 60px 0px;
+            background-size: contain;
+        }
+
+        h1{
+            font-size: 40px;
+            font-weight: 1000;
+            font-family: 'MetropolisNF', sans-serif;
+            color: white;
+            margin: 0px 0px 10px 0px;
+        }
+
+        p{
+            font-size: 1.3rem;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .search{
+            background-color: white;
+            width: 70%;
+            margin: 0px auto;
+            display: flex;
+            border-radius: 10px;
+            height: 20px;
+            align-items: center;
+            padding: 10px;
+        }
+
+        select{
+            border: none;
+            width: 25%;
+            padding: 0px 0px;
+            margin-left: 3px;
+            margin-right: 5px;
+            font-size: small;
+            color: grey;
+        }
+
+        select:focus{
+            outline: none;
+        }
+
+        .fa-solid fa-location-dot{
+            padding: 20px;
+            margin-left: 20px;
+        }
+        .searchbox{
+            border: none;
+            width: 60%;
+            margin-left: 10px;
+            height: 40px;
+        }
+        .searchbox:focus{
+            outline: none;
+        }
+
+
+        #home{
+            height: 70px;
+            width: 70px;
+            position: fixed;
+            top : 30px;
+            left: 20px;
+            padding: 10px;
+            border-radius: 50%;
+            border: 1px solid #61ffca;
+            background-color: #64CCC5;
+            font-family: 'Indie Flower', cursive;
+            font-size: 1.2rem;
+            color: #DAFFFB;
+            box-shadow: 0px 0px 8px 4px rgba(175, 174, 174, 0.404);
+            
+        }
+
+        #next{
+            height: 70px;
+            width: 150px;
+            position: fixed;
+            bottom : 30px;
+            right: 50px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #61ffca;
+            background-color: #479792;
+            font-family: 'Indie Flower', cursive;
+            font-size: 1.1rem;
+            color: #DAFFFB;
+            box-shadow: 0px 0px 8px 6px rgba(175, 174, 174, 0.404);
+            
+        }
+
+        #pre{
+            height: 70px;
+            width: 150px;
+            position: fixed;
+            bottom : 30px;
+            left: 50px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #61ffca;
+            background-color: #479792;
+            font-family: 'Indie Flower', cursive;
+            font-size: 1.1rem;
+            color: #DAFFFB;
+            box-shadow: 0px 0px 8px 6px rgba(175, 174, 174, 0.404);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+
+        <h1><i>Zomato</i></h1>
+        <p>Discover the best food and Drinks in Locknow</p>
+
+        <div class="search">
+            <i class="fa-solid fa-location-dot" style="color: #ff7e8b;" class="icons"></i>
+            <select>
+                <option name="" id="">Lucknow</option>
+                <option name="" id="">Kolkata</option>
+            </select>
+            <i class="fa-solid fa-magnifying-glass" style="color: #a8aebd;" class="icons"></i>
+            <input type="search" name="" id="" placeholder="Search for resturant cuisine or a dish" class="searchbox">
+        </div>
+
+    </div>
+
+    <button onclick="location.href='./index.html';" id="home" > Home</button>
+
+    <button onclick="location.href='./assignment4.html';" id="next" >Next</button>
+
+    <button onclick="location.href='./assignment2.html';" id="pre" >Previous</button>
+</body>
+</html>
